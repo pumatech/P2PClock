@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>P2P Working Clock</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    canvas {
+      display: block;
+      margin: auto;
+      touch-action: none;
+      z-index: -1;
+    }
+
+    #options {
+      display: block;
+      width: 400px;
+      margin: auto;
+      position: relative;
+    }
+
+    #alertCheck {
+      position: absolute;
+      left: 4px;
+      bottom: 0px;
+    }
+
+    #colorsCheck {
+      position: absolute;
+      right: 4px;
+      bottom: 0px;
+    }
+  </style>
+</head>
+<script src="clock.js"></script>
+<body>
+  <!-- Thanks to https://www.w3schools.com/graphics/tryit.asp?filename=trycanvas_clock_start -->
+
+  <canvas id="canvas" width="400" height="400" title="click and drag to highlight a range of time"></canvas>
+  <div id="options">
+    <div id="alertCheck">
+      <input type="checkbox" id="alerts" name="alerts" value="alerts">
+      <label for="alerts"> Notifications</label>
+    </div>
+    <div id="colorsCheck">
+      <input type="checkbox" id="colors" name="colors" value="colors">
+      <label for="colors"> Three Colors</label>
+    </div>
+  </div>
+
+</body>
+
+</html>
